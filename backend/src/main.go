@@ -33,6 +33,7 @@ func ServeHTTP(w http.ResponseWriter, r *http.Request) {
     }
 
     w.Header().Set("Content-Type", "application/json")
+    w.Header().Set("Access-Control-Allow-Origin", "*")
     w.WriteHeader(http.StatusOK)
     //resp := fmt.Sprintf("La hora es %v y hostname es %v", time.Now(), os.Getenv("HOSTNAME"))
     //w.Write([]byte(resp))

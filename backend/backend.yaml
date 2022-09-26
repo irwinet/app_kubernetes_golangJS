@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: irwinet/app-golang:v1
+        image: irwinet/app-golang:v2
         #image: k8s-hands-on:latest
         #imagePullPolicy: IfNotPresent
 ---
